@@ -1,11 +1,12 @@
 {
-  "name": "ethereum-blocks",
+  "name": "hsc-blocks",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/ethereum-blocks",
-    "create-local": "graph create --node http://localhost:8020/ blocklytics/ethereum-blocks",
+    "deploy": "graph deploy --ipfs https://graphapi.hoosmartchain.com/ipfs/  --node https://graphapi.hoosmartchain.com/deploy/  hsc-blocks",
+    "create-local": "graph create --node http://localhost:8020/ hsc-blocks",
+    "create-hsc": "graph create --node https://graphapi.hoosmartchain.com/deploy/  hsc-blocks",
     "remove-local": "graph remove --node http://localhost:8020/ blocklytics/ethereum-blocks",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 blocklytics/ethereum-blocks",
     "deploy-rinkeby": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/rinkeby-blocks",
